@@ -1,0 +1,36 @@
+Telegram Bot Command Log 
+
+[2025-05-14 12:12:43] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /start
+[2025-05-14 12:12:52] User ID: 1170127212, Username: @yo_cho, Name: Даша, Callback: open_menu
+[2025-05-14 12:12:52] User ID: 7536245132, Username: @DI_Crypto_Analyzer_bot, Name: Crypto_Analyzer, Command: /menu
+[2025-05-14 12:13:02] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /crypto
+[2025-05-14 12:13:39] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /calc
+[2025-05-14 12:13:41] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /chart
+[2025-05-14 12:13:42] User ID: 1170127212, Username: @yo_cho, Name: Даша, Callback: chart_bitcoin
+[2025-05-14 12:13:55] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /faq
+[2025-05-14 12:13:56] User ID: 1170127212, Username: @yo_cho, Name: Даша, Callback: faq_q1
+[2025-05-14 12:13:58] User ID: 1170127212, Username: @yo_cho, Name: Даша, Callback: faq_q3
+[2025-05-14 12:14:07] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /help
+[2025-05-14 12:14:14] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /language
+[2025-05-14 12:14:16] User ID: 1170127212, Username: @yo_cho, Name: Даша, Set language: en
+[2025-05-14 12:14:17] User ID: 1170127212, Username: @yo_cho, Name: Даша, Set language: ru
+[2025-05-14 19:32:44] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /menu
+[2025-05-14 19:32:48] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /language
+[2025-05-14 19:32:54] User ID: 1170127212, Username: @yo_cho, Name: Даша, Set language: en
+[2025-05-14 19:33:06] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /start
+[2025-05-14 19:33:11] User ID: 1170127212, Username: @yo_cho, Name: Даша, Callback: open_menu
+[2025-05-14 19:33:11] User ID: 7536245132, Username: @DI_Crypto_Analyzer_bot, Name: Crypto_Analyzer, Command: /menu
+[2025-05-14 19:33:41] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /menu
+[2025-05-14 19:33:47] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /menu
+[2025-05-14 19:33:54] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /crypto
+[2025-05-14 19:33:57] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /help
+[2025-05-14 19:34:10] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /chart
+[2025-05-14 19:34:11] User ID: 1170127212, Username: @yo_cho, Name: Даша, Callback: chart_bitcoin
+[2025-05-14 19:34:20] User ID: 1170127212, Username: @yo_cho, Name: Даша, Callback: chart_solana
+[2025-05-14 19:34:33] User ID: 1170127212, Username: @yo_cho, Name: Даша, Callback: chart_dogecoin
+[2025-05-14 19:34:48] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /start
+[2025-05-14 19:34:50] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /menu
+[2025-05-14 19:34:52] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /language
+[2025-05-14 19:34:53] User ID: 1170127212, Username: @yo_cho, Name: Даша, Set language: ru
+[2025-05-14 19:34:59] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /menu
+[2025-05-14 19:35:02] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /help
