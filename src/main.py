@@ -16,7 +16,7 @@ from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
 # загрузка токена из .env
-load_dotenv(find_dotenv())
+load_dotenv(find_dotenv())     # даша
 bot = Bot(token=os.getenv("TOKEN"))
 dp = Dispatcher()
 
@@ -29,7 +29,7 @@ Base = declarative_base()
 session_factory = sessionmaker(bind=engine)
 Session = scoped_session(session_factory)
 
-
+# даша
 class User(Base):
     __tablename__ = "users"
 
@@ -110,7 +110,7 @@ popular_tokens = {
 }
 
 # словари с переводами для интерфейса бота
-translations = {
+translations = {              # катя
     'ru': {
         "welcome": "👋 Привет! Я крипто-бот. Помогу узнать курсы, построить графики и рассчитать позиции.\n\n"
                    "Нажми кнопку ниже или введи /menu для списка команд.",
@@ -198,7 +198,7 @@ translations = {
 }
 
 # переводы для команды FAQ
-faq_data = {
+faq_data = {     #катя
     'ru': {
         "q1": {
             "question": "Что такое криптовалюта?",
@@ -237,7 +237,7 @@ faq_data = {
     }
 }
 
-
+# даша
 # получение языка пользователя из бд
 async def get_user_language(user_id):
     session = Session()
@@ -339,7 +339,7 @@ def get_token_description(symbol='bitcoin', lang='ru'):
 # Хендлеры
 
 @dp.message(CommandStart())
-async def start_cmd(message: types.Message):
+async def start_cmd(message: types.Message):  # катя
     await log_command(message, "/start")
     user_id = message.from_user.id
     username = message.from_user.username or "No username"
@@ -360,7 +360,7 @@ async def start_cmd(message: types.Message):
         reply_markup=keyboard
     )
 
-
+# катя
 @dp.message(Command("menu"))
 async def menu_cmd(message: types.Message):
     await log_command(message, "/menu")
@@ -377,7 +377,7 @@ async def menu_cmd(message: types.Message):
         f"{translations[lang]['menu_language']}"
     )
 
-
+# катя
 @dp.message(Command("crypto"))
 async def crypto_cmd(message: types.Message):
     await log_command(message, message.text)  # логируем полную команду с аргументами
@@ -392,7 +392,7 @@ async def crypto_cmd(message: types.Message):
     except Exception as e:
         await message.answer(translations[lang]['error'].format(str(e)))
 
-
+# даша
 @dp.message(Command("calc"))
 async def calc_cmd(message: types.Message):
     await log_command(message, message.text)
@@ -414,7 +414,7 @@ async def calc_cmd(message: types.Message):
     except Exception as e:
         await message.answer(translations[lang]['error'].format(str(e)))
 
-
+# катя
 @dp.message(Command("faq"))
 async def faq_cmd(message: types.Message):
     await log_command(message, "/faq")
@@ -454,7 +454,7 @@ async def answer_faq(callback: CallbackQuery):
         await callback.message.answer(translations[lang]["question_not_found"])
     await callback.answer()
 
-
+# катя
 @dp.message(Command("help"))
 async def help_cmd(message: types.Message):
     await log_command(message, "/help")
@@ -475,7 +475,7 @@ async def help_cmd(message: types.Message):
         reply_markup=keyboard
     )
 
-
+# даша
 @dp.callback_query(lambda c: c.data == "open_menu")
 async def open_menu_callback(callback: CallbackQuery):
     user_id = callback.from_user.id
@@ -494,7 +494,7 @@ async def open_menu_callback(callback: CallbackQuery):
     await menu_cmd(callback.message)
     await callback.answer()
 
-
+# даша
 @dp.message(Command("chart"))
 async def chart_menu(message: types.Message):
     await log_command(message, "/chart")
@@ -541,7 +541,7 @@ async def send_chart(callback: CallbackQuery):
     except Exception as e:
         await callback.message.answer(translations[lang]["chart_error"].format(str(e)))
 
-
+# даша
 @dp.message(Command("language"))
 async def language_cmd(message: types.Message):
     await log_command(message, "/language")
@@ -580,7 +580,7 @@ async def set_language_callback(callback: CallbackQuery):
     await callback.message.answer(translations[selected_lang]["language_changed"])
     await callback.answer()
 
-
+# даша
 @dp.message()
 async def echo_handler(message: types.Message):
     # логируем обычные сообщения
