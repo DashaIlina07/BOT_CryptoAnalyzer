@@ -609,6 +609,8 @@ async def echo_handler(message: types.Message):
 
 
 async def main():
+    log_dir = os.path.dirname(LOG_FILE)
+    os.makedirs(log_dir, exist_ok=True)
     # создание файла логов, если его неь
     if not os.path.exists(LOG_FILE):
         with open(LOG_FILE, "w", encoding="utf-8") as f:

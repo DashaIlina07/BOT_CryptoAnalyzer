@@ -34,3 +34,4 @@ Telegram Bot Command Log
 [2025-05-14 19:34:53] User ID: 1170127212, Username: @yo_cho, Name: Даша, Set language: ru
 [2025-05-14 19:34:59] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /menu
 [2025-05-14 19:35:02] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /help
+[2025-05-16 14:05:35] User ID: 1170127212, Username: @yo_cho, Name: Даша, Command: /start
